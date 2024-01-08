@@ -40,4 +40,3 @@ This repository contains an end-to-end project for heart disease prediction usin
 5. **Making Predictions:**
 
    Now you can substitute values and predict the output.
-```
