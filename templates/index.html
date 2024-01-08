@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart Disease Prediction</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS */
+        /* Sky blue color and custom font for NUST Medical College */
+        .navbar-brand {
+            color: #87CEEB; /* Sky blue color */
+            font-family: 'Arial', sans-serif; /* Custom font */
+            font-weight: bold; /* Bold font weight */
+            font-size: 1.5rem; /* Larger font size */
+        }
+
+        /* Increase the width of form elements */
+        input[type="number"] {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">NUST Medical College</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Heart Disease Prediction</h1>
+        <form action="/predict" method="post" class="mx-auto" style="max-width: 400px;" id="predictionForm">
+            <div class="form-group">
+                <label for="heart_rate">Heart Rate:</label>
+                <input type="number" id="heart_rate" name="heart_rate" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="cholesterol_level">Cholesterol Level:</label>
+                <input type="number" id="cholesterol_level" name="cholesterol_level" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="triglycerides_level">Triglycerides Level:</label>
+                <input type="number" id="triglycerides_level" name="triglycerides_level" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="fasting_blood_sugar">Fasting Blood Sugar:</label>
+                <input type="number" id="fasting_blood_sugar" name="fasting_blood_sugar" class="form-control">
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Predict</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and jQuery (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Function to validate the form fields before submission
+        document.getElementById("predictionForm").addEventListener("submit", function(event) {
+            const heartRate = document.getElementById("heart_rate").value.trim();
+            const cholesterolLevel = document.getElementById("cholesterol_level").value.trim();
+            const triglyceridesLevel = document.getElementById("triglycerides_level").value.trim();
+            const fastingBloodSugar = document.getElementById("fasting_blood_sugar").value.trim();
+
+            // Check if any field is empty
+            if (!heartRate || !cholesterolLevel || !triglyceridesLevel || !fastingBloodSugar) {
+                event.preventDefault(); // Prevent form submission
+                alert("Please fill in all the fields!"); // Display an alert
+            }
+        });
+    </script>
+</body>
+</html>
