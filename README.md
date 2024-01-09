@@ -42,6 +42,6 @@ This repository contains an end-to-end project for heart disease prediction usin
    Now you can substitute values and predict the output.
 
 Contributors: 
-               Zawar Khan 
-               Awais Raza
-               Syed Shabih Ahmed
+               Zawar Khan <br>
+               Awais Raza <br>
+               Syed Shabih Ahmed <br>
