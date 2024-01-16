@@ -40,8 +40,8 @@ This repository contains an end-to-end project for heart disease prediction usin
 5. **Making Predictions:**
 
    Now you can substitute values and predict the output.
-
+Supervisor:  Dr. Rauf Ahmed Subhani
 Contributors: 
-               Zawar Khan <br>
+           <br>Zawar Khan <br>
                Awais Raza <br>
                Syed Shabih Ahmed <br>
