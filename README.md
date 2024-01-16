@@ -44,7 +44,9 @@ This repository contains an end-to-end project for heart disease prediction usin
 <br>
 Supervisor:  Dr. Rauf Ahmed Subhani
 <br>
+<br>
 Contributors: 
-           <br>Zawar Khan <br>
-               Awais Raza <br>
-               Syed Shabih Ahmed <br>
+           <br>
+           Zawar Khan <br>
+           Awais Raza <br>
+           Syed Shabih Ahmed <br>
