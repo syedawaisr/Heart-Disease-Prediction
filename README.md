@@ -42,11 +42,12 @@ This repository contains an end-to-end project for heart disease prediction usin
    Now you can substitute values and predict the output.
 
 <br>
-Supervisor:  Dr. Rauf Ahmed Subhani
+Supervisor:  Dr. Ahmad Rauf Subhani
 <br>
 <br>
+<pre>
 Contributors: 
-           <br>
-           Zawar Khan <br>
-           Awais Raza <br>
-           Syed Shabih Ahmed <br>
+           Zawar Khan
+           Awais Raza
+           Syed Shabih Ahmed
+</pre>
